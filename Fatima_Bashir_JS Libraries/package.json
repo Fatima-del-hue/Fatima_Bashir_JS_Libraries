@@ -1,0 +1,19 @@
+{
+  "name": "web-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runserver": "lite-server --baseDir=\"public\"",
+    "runsass": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run runserver\" \"npm run runsass\""
+  },
+  "author": "Fatima Bashir",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.85.1"
+  }
+}

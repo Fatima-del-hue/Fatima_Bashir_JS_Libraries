@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS RESET -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="/assets/css/style.css"/>
+
+        <!-- Glide.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+        <!-- Optional Theme CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+        <!-- AOS Library (CSS) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+        <!-- Lightbox2 CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+        
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        
+
+        <title>Wanderers - JS Libraries</title>
+    </head>
+    <body>
+
+        <!-- header section -->
+
+        <header>
+            <section class="logo">   
+                <h1>Wanderers</h1>
+            </section>
+            <nav id="nav-links"> 
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img class="mobile-menu-icon" id="menu-icon" src="assets/images/icon-menu.png" alt="icon menu">
+           
+        </header>
+        
+        <!-- Js libraries -->
+    
+        <!-- Glide library -->
+        <section class="glide_container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img class="slider_image" src="assets/images/img3.jpeg" alt="image of a map"></li>
+                    <li class="glide__slide"><img class="slider_image" src="assets/images/img2.jpeg" alt="image of an iguana"></li>
+                    <li class="glide__slide"><img class="slider_image" src="assets/images/img1.jpeg" alt="image of a horse"></li>
+                  </ul>
+                </div>
+                <!-- arrows controls -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- AOS animation library -->
+        <h1 class="heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+            Welcome to Wanderers 🌍
+        </h1>
+
+        <p id="welcom_para" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">Click to preview our latest Destinations</p>
+
+        <!-- Lightbox Effect Library-->
+        <section class="Lightbox_images">
+            <a href="assets/images/c1.jpeg" data-lightbox="gallery" data-title="Salzburg Skyline Austria">
+                <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/c1.jpeg" width="200" alt="Image of Salzburg Austria Skyline">
+            </a>
+            <a href="assets/images/c2.jpeg" data-lightbox="gallery" data-title="Iconic view of Mount Fuji">
+                <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/c2.jpeg" width="200" alt="Image of Japan">
+            </a>
+            <a href="assets/images/c3.jpeg" data-lightbox="gallery" data-title="Colorful traditional luzzu boats">
+                <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/c3.jpeg" width="200" alt="Image of Malta">
+            </a>
+            <a href="assets/images/c4.jpeg" data-lightbox="gallery" data-title="Beautiful Moraine lake">
+                <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/c4.jpeg" width="200" alt="Image of Canada">
+            </a>
+        </section>
+
+        
+        <!-- Leaflet Map  library  -->
+        <div id="map" ></div>
+
+
+        <!-- footer section -->
+        <footer>
+            <section class="footer-sec">
+                <section class="footer-logo">
+                    <h2>Wanderers</h2>
+                    <p>Elevate your Travel Experience with us.</p>
+                </section>
+        
+                <section class="footer-links">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+        
+                <section class="footer-social">
+                    <p>Follow us:</p>
+                    <section class="social-icons">
+                        <a href="#"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/icon-twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="assets/images/icon-linkedin.png" alt="Instagram"></a>
+                    </section>
+                </section>
+
+            </section>
+            <p class="footer-copy">© 2025 Wanderers. All Rights Reserved.</p>
+
+        </footer>
+    
+
+        <!-- _________________________________________________Libraries used -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Library 1 - Lightbox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+        
+        <!-- Library 2 - Glide.js JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+        <!-- Library 3 - AOS Library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <!-- Library 4 - Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        
+        <!-- the JavaScript File -->
+        <script src="/assets/js/main.js"></script>
+
+
+    </body>
+</html>
